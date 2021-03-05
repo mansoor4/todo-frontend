@@ -1,0 +1,114 @@
+.TodoContainer {
+    width: 380px;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.SearchContainer {
+    width: 90%;
+    text-align: start;
+    height: 26px;
+    background-color: white;
+}
+
+.Search {
+    display: inline;
+    width: 90%;
+    outline: none;
+    border: none;
+    height: 26px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    color: black;
+}
+
+
+
+.Search::placeholder {
+    color: rgb(206, 206, 206);
+    font-size: 17px;
+    transform: translateY(2px);
+}
+
+/* .SearchIcon {
+    transform: translate(5px, 2px);
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+} */
+
+.Contain {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    /* background-color: white; */
+}
+
+.AddContainer {
+    width: 180px;
+    background-color: white;
+    text-align: start;
+}
+
+.Add {
+    width: 80%;
+    height: 22px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    color: black;
+
+}
+
+
+
+.Add::placeholder {
+    color: rgb(206, 206, 206);
+    font-size: 14px;
+    transform: translateY(1px);
+}
+
+
+.Select {
+    height: 24px;
+    outline: none;
+    border: none;
+    color: rgb(255, 100, 0);
+    font-weight: bolder;
+    cursor: pointer;
+    width: 117px;
+    margin-left: 44px;
+}
+
+.Option {
+    font-weight: bold;
+}
+
+.Plus {
+    transform: translate(3px, 2px);
+    font-size: 17px;
+    color: rgb(255, 100, 0);
+    cursor: pointer;
+    display: inline-block
+}
+
+.Drop {
+    color: white;
+    display: inline-block;
+    background-color: rgb(255, 100, 0);
+    height: 23.5px;
+    width: 25px;
+    transform: translate(-23px, -2.5px);
+    cursor: pointer;
+}
+
+.TodoList {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.AddTodo {
+    color: rgb(95, 94, 94);
+    text-align: center;
+    font-weight: bolder;
+    transform: translateX(-5px);
+}

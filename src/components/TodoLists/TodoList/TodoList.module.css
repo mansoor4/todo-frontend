@@ -1,0 +1,64 @@
+.ItemContain {
+    text-align: start;
+    background-color: white;
+    margin-bottom: 6px;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    transition: all .5s ease-out;
+    display: flex;
+}
+
+.Deleted {
+    transform-origin: left;
+    transform: rotate(3deg);
+    opacity: 0;
+}
+
+.ItemContain>i {
+    display: inline-block;
+    height: 28px;
+    width: 30px;
+    text-align: center;
+    line-height: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.Complete {
+    background-color: rgb(50, 219, 50);
+}
+
+.Delete {
+    background-color: rgb(255, 100, 0);
+
+}
+
+.Text {
+    display: flex;
+    justify-content: space-between;
+    width: 82.8%;
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.Completed {
+    text-decoration: line-through;
+    opacity: .4;
+}
+
+.Arrow {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+    line-height: 28px;
+    transform: scale(.5);
+    cursor: pointer;
+    display: block;
+    background-color: rgb(94, 94, 94);
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+

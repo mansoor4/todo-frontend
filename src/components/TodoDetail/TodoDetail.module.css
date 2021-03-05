@@ -1,0 +1,137 @@
+.Detail {
+    text-align: start;
+    position: absolute;
+    z-index: 10;
+    width: 380px;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-190px);
+    padding-bottom: 10px;
+}
+
+.Title_contain {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.Title {
+    color: rgb(151, 151, 151);
+    margin-right: 8px;
+    text-decoration: underline;
+}
+
+.Title_content {
+    text-transform: uppercase;
+    color: rgb(49, 40, 40);
+    font-weight: bold;
+}
+
+.Description {
+    color: rgb(151, 151, 151);
+    text-decoration: underline;
+
+}
+
+.Description_content {
+    margin-left: 105px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+
+.Button_contain {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Update {
+    color: orange;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.Cancel {
+    color: red;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.Update:hover {
+    transform: scale(1.1);
+}
+
+.Cancel:hover {
+    transform: scale(1.1);
+}
+
+.Form {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+}
+
+.Input_title {
+    width: 95%;
+    margin: auto;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+.Input_description {
+    width: 95%;
+    margin: auto;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.Input_button {
+    width: 90%;
+    margin: auto;
+}
+
+.Submit {
+    color: rgb(60, 218, 60);
+    cursor: pointer;
+}
+
+.Input_cancel {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.Submit:hover {
+    transform: scale(1.1);
+}
+
+.Input_cancel:hover {
+    transform: scale(1.1);
+}
+
+
+/* <div className={classes.Title_contain}>
+<span className={classes.Title}>Title:</span>
+<span className={classes.Title_content}>{this.props.title}</span>
+</div>
+<div className={classes.Description_contain}>
+<span className={classes.Description}>Description:</span>
+<br />
+<span className={classes.Description_content}>
+  {this.props.description}
+</span>
+</div>
+<div className={classes.Button_contain}>
+<span className={classes.Update}>Update</span>
+<span className={classes.Cancel}>Cancel</span>
+</div> */

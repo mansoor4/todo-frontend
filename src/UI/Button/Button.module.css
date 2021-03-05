@@ -1,0 +1,17 @@
+.Button
+{
+    border:0;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.Danger
+{
+    color: red;
+}
+
+.Success
+{
+    color: rgb(0, 230, 0);
+}

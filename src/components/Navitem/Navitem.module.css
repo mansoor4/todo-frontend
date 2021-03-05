@@ -1,0 +1,14 @@
+.Navitem {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.Navitem a {
+    display: block;
+}
+
+.Navitem a i
+{
+    margin-right: 10px;
+}
