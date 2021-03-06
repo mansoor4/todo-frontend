@@ -92,7 +92,7 @@ class Signin extends Component {
           <p style={{ textAlign: "center" }}>OR</p>
           <div style={{ width: "100px", margin: "auto", marginTop: "10px" }}>
             <GoogleLogin
-              clientId={process.env.CLIENT_ID}
+              clientId={process.env.REACT_APP_CLIENT_ID}
               onSuccess={(response) =>
                 this.props.googleLogin(response, this.props.history)
               }
