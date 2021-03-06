@@ -7,6 +7,8 @@ import { signin, googleLogin } from "../../redux/actions/index";
 import classes from "./Signin.module.css";
 import Loader from "../../UI/Loader/Loader";
 import { GoogleLogin } from "react-google-login";
+import { toast } from "react-toastify";
+toast.configure({ autoClose: "2000" });
 
 class Signin extends Component {
   state = {
@@ -37,6 +39,11 @@ class Signin extends Component {
     };
 
     this.props.signin(userdata, this.props.history);
+  };
+
+  failureHandler = (error) => {
+    console.log(error);
+    toast("Google login failed", { type: "error" });
   };
 
   render() {
@@ -92,11 +99,12 @@ class Signin extends Component {
           <p style={{ textAlign: "center" }}>OR</p>
           <div style={{ width: "100px", margin: "auto", marginTop: "10px" }}>
             <GoogleLogin
+              cookiePolicy="single_host_origin"
               clientId={process.env.REACT_APP_CLIENT_ID}
               onSuccess={(response) =>
                 this.props.googleLogin(response, this.props.history)
               }
-              onFailure={this.props.googleLogin}
+              onFailure={this.failureHandler}
             >
               <p style={{ transform: "translateY(-5px)" }}>LOGIN</p>
             </GoogleLogin>
