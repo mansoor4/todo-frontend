@@ -21,7 +21,6 @@ class Signup extends Component {
     }
   }
 
-
   changeHandler = (event, type) => {
     this.setState({ [type]: event.target.value });
   };

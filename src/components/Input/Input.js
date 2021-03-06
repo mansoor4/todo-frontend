@@ -1,11 +1,10 @@
 import React from "react";
-import classes from "./Input.module.css"
+import classes from "./Input.module.css";
 const Input = (props) => {
   let input = null;
-  const inputClasses=[props.class];
-  if(props.showError)
-  {
-    inputClasses.push(classes.Error)
+  const inputClasses = [props.class];
+  if (props.showError) {
+    inputClasses.push(classes.Error);
   }
   switch (props.inputType) {
     case "input":

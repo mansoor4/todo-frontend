@@ -4,9 +4,7 @@ import classes from "./Modal.module.css";
 const Modal = (props) => {
   return (
     <Aux>
-      <div className={classes.Modal}>
-       {props.children}
-      </div>
+      <div className={classes.Modal}>{props.children}</div>
     </Aux>
   );
 };

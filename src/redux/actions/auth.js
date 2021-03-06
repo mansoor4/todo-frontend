@@ -94,7 +94,6 @@ export const signup = (userData, history) => (dispatch) => {
   axios
     .post("/graphql", signup_query)
     .then((response) => {
-      console.log(response.data);
       if (response.data.errors) {
         dispatch(signup_failed());
         toast(response.data.errors[0].message, {
@@ -185,7 +184,6 @@ export const checkSignin = () => (dispatch) => {
 };
 
 export const googleLogin = (response, history) => (dispatch) => {
-  console.log(response);
   const GOOGLE_LOGIN = {
     query: `
     mutation GOOGLE_LOGIN($token:String!){

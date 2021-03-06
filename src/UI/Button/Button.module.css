@@ -1,17 +1,14 @@
-.Button
-{
-    border:0;
+.Button {
+    border: 0;
     outline: none;
     background-color: inherit;
     cursor: pointer;
 }
 
-.Danger
-{
+.Danger {
     color: red;
 }
 
-.Success
-{
+.Success {
     color: rgb(0, 230, 0);
 }

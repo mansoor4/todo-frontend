@@ -1,23 +1,22 @@
-.Contain
-{
+.Contain {
     width: 300px;
     height: 150px;
 }
-.Description
-{
-    width:280px;
+
+.Description {
+    width: 280px;
     height: 100px;
-   margin-top: 15px;
-   margin-left: 10px;
-   margin-bottom: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
     border: 1px solid rgb(168, 168, 168);
     padding-left: 5px;
     box-sizing: border-box;
     outline: none;
-    resize:none;
+    resize: none;
 }
-.Description::placeholder
-{
+
+.Description::placeholder {
     color: rgb(206, 206, 206);
     font-size: 16px;
     transform: translateY(1px);
